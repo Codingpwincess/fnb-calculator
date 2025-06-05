@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/calculator-styling.css"/>
+    <title>FNB Calculator App</title>
+    <link rel="icon" href="./assets/icons8-calculator-94.png" type="x-image/icon"/>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="4">
+       <input type="text" id="inputBox" value="0"/>
+    </td>
+  </tr>
+
+<!--numbers and operators added using the table format-->
+
+<tr>
+      <td class="backspaceBtn"colspan="3" onclick="backspaceBtnPressed()">←</td>
+      <td class ="cancelBtn" onclick="cancelBtnPressed()">C</td>
+    </tr>
+  <tr>
+    <td class="digiBtn" onclick="digitBtnPressed(7)">7</td>
+    <td class="digiBtn" onclick="digitBtnPressed(8)">8</td>
+    <td class="digiBtn" onclick="digitBtnPressed(9)">9</td>
+    <td class="operatorBtn" onclick="operatorBtnPressed('÷')">÷</td>
+    </tr>
+  <tr>
+    <td class="digiBtn" onclick="digitBtnPressed(4)">4</td>
+    <td class="digiBtn" onclick="digitBtnPressed(5)">5</td>
+    <td  class="digiBtn" onclick="digitBtnPressed(6)">6</td>
+    <td class="operatorBtn" onclick="operatorBtnPressed('×')">×</td>
+    </tr>
+  <tr>
+    <td class="digiBtn" onclick="digitBtnPressed(1)">1</td>
+    <td class="digiBtn" onclick="digitBtnPressed(2)">2</td>
+    <td class="digiBtn" onclick="digitBtnPressed(3)">3</td>
+    <td class="operatorBtn" onclick="operatorBtnPressed('+')">+</td>
+    </tr>
+  <tr>
+    <td class="digiBtn" colspan="3" onclick="digitBtnPressed(0)">0</td>
+    <td class="operatorBtn" onclick="operatorBtnPressed('-')">-</td>
+    </tr>
+    <tr>
+      <td class ="operatorBtn" colspan="4" onclick="equalsBtnPressed()">=</td>
+    </tr>
+  </table>
+  <script src="./functions/script.js" >
+  </script>
+</body>
+
+</html>
